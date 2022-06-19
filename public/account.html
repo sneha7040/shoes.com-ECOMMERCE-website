@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.css"/>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="css/style2.css">
+
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="navber">
+        <div class="logo">
+            <img src="img/img25.png " alt=" " width="150px">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <div class="login-page">
+        <div class="form">
+          <form class="register-form">
+            <input type="text" placeholder="name"/>
+            <input type="password" placeholder="password"/>
+            <input type="text" placeholder="email address"/>
+            <button>create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+          </form>
+          <form class="login-form">
+            <input type="text" placeholder="username"/>
+            <input type="password" placeholder="password"/>
+            <button>login</button>
+            <p class="message">Not registered? <a href="#">Create an account</a></p>
+          </form>
+        </div>
+      </div>
+     <script src="js/script.js">
+     $('.message a').click(function(){
+        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+     });
+     </script>
+      
+      
+
+</body>
+</html>
